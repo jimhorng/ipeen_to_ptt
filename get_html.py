@@ -4,9 +4,11 @@ import json
 import pa_html
 import sys
 
+#Configuration
 workspace_dir = "C:/workspace/py/ipeen_2_ptt/"
 url_file = workspace_dir + "urls.txt"
 output_file = workspace_dir + "tmp.html"
+#/Configuration
 
 def get_shorturl(url):
     gogl_url = "https://www.googleapis.com/urlshortener/v1/url"    

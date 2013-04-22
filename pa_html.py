@@ -4,9 +4,11 @@ from io import StringIO
 import re
 import sys
 
+#Configuration
 workspace_dir = "C:/workspace/py/ipeen_2_ptt/"
 input_file = workspace_dir + "tmp.html"    
 output_dir = workspace_dir + "output/"   
+#/Configuration
 
 def main(shorturl, html_file):
     dict_xpath = {
