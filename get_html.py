@@ -36,7 +36,7 @@ def convert(url):
     
 def main():    
     f = open(url_file, "r+")
-    for line in f:        
+    for line in f:
         convert(url=line.rstrip())
     f.close()
 
