@@ -3,11 +3,12 @@ import urllib.request
 import json
 import pa_html
 import sys
+import os
 
 #Configuration
-workspace_dir = "C:/workspace/py/ipeen_2_ptt/"
-url_file = workspace_dir + "urls.txt"
-output_file = workspace_dir + "tmp.html"
+workspace_dir = os.path.dirname(os.path.realpath(__file__))
+url_file = os.path.join(workspace_dir, "urls.txt")
+output_file = os.path.join(workspace_dir, "tmp.html")
 #/Configuration
 
 def get_shorturl(url):
